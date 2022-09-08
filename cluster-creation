@@ -1,0 +1,5 @@
+az aks create --resource-group aks-rg --name my-test-cluster --node-count 2 --generate-ssh-key
+az aks get-credentials --resource-group aks-rg --name my-test-cluster
+kubectl get nodes
+code simple-pod.yaml
+kubectl apply -f simple-pod.yaml
